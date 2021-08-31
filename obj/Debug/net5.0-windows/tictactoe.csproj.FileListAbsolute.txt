@@ -1,4 +1,3 @@
-E:\Desktop\tictactoe\obj\Debug\net5.0-windows\tictactoe.csproj.AssemblyReference.cache
 E:\Desktop\tictactoe\obj\Debug\net5.0-windows\tictactoe.csproj.GenerateResource.cache
 E:\Desktop\tictactoe\obj\Debug\net5.0-windows\tictactoe.GeneratedMSBuildEditorConfig.editorconfig
 E:\Desktop\tictactoe\obj\Debug\net5.0-windows\tictactoe.AssemblyInfoInputs.cache
@@ -17,3 +16,4 @@ E:\Desktop\tictactoe\obj\Debug\net5.0-windows\tictactoe.pdb
 E:\Desktop\tictactoe\obj\Debug\net5.0-windows\tictactoe.genruntimeconfig.cache
 E:\Desktop\tictactoe\obj\Debug\net5.0-windows\tictactoe.TicTacToeForm.resources
 E:\Desktop\tictactoe\obj\Debug\net5.0-windows\tictactoe.Properties.Resources.resources
+E:\Desktop\tictactoe\obj\Debug\net5.0-windows\tictactoe.csproj.AssemblyReference.cache

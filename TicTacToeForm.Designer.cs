@@ -53,7 +53,7 @@
             this.topLeftPictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.topLeftPictureBox.Location = new System.Drawing.Point(35, 34);
             this.topLeftPictureBox.Name = "topLeftPictureBox";
-            this.topLeftPictureBox.Size = new System.Drawing.Size(100, 50);
+            this.topLeftPictureBox.Size = new System.Drawing.Size(161, 141);
             this.topLeftPictureBox.TabIndex = 0;
             this.topLeftPictureBox.TabStop = false;
             this.topLeftPictureBox.Click += new System.EventHandler(this.Cell_Click);
@@ -61,9 +61,9 @@
             // topCenterPictureBox
             // 
             this.topCenterPictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.topCenterPictureBox.Location = new System.Drawing.Point(141, 34);
+            this.topCenterPictureBox.Location = new System.Drawing.Point(202, 34);
             this.topCenterPictureBox.Name = "topCenterPictureBox";
-            this.topCenterPictureBox.Size = new System.Drawing.Size(100, 50);
+            this.topCenterPictureBox.Size = new System.Drawing.Size(161, 141);
             this.topCenterPictureBox.TabIndex = 1;
             this.topCenterPictureBox.TabStop = false;
             this.topCenterPictureBox.Click += new System.EventHandler(this.Cell_Click);
@@ -71,9 +71,9 @@
             // topRightPictureBox
             // 
             this.topRightPictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.topRightPictureBox.Location = new System.Drawing.Point(247, 34);
+            this.topRightPictureBox.Location = new System.Drawing.Point(369, 34);
             this.topRightPictureBox.Name = "topRightPictureBox";
-            this.topRightPictureBox.Size = new System.Drawing.Size(100, 50);
+            this.topRightPictureBox.Size = new System.Drawing.Size(161, 141);
             this.topRightPictureBox.TabIndex = 2;
             this.topRightPictureBox.TabStop = false;
             this.topRightPictureBox.Click += new System.EventHandler(this.Cell_Click);
@@ -81,9 +81,9 @@
             // middleLeftPictureBox
             // 
             this.middleLeftPictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.middleLeftPictureBox.Location = new System.Drawing.Point(35, 90);
+            this.middleLeftPictureBox.Location = new System.Drawing.Point(35, 181);
             this.middleLeftPictureBox.Name = "middleLeftPictureBox";
-            this.middleLeftPictureBox.Size = new System.Drawing.Size(100, 50);
+            this.middleLeftPictureBox.Size = new System.Drawing.Size(161, 143);
             this.middleLeftPictureBox.TabIndex = 3;
             this.middleLeftPictureBox.TabStop = false;
             this.middleLeftPictureBox.Click += new System.EventHandler(this.Cell_Click);
@@ -91,9 +91,9 @@
             // middleCenterPictureBox
             // 
             this.middleCenterPictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.middleCenterPictureBox.Location = new System.Drawing.Point(141, 90);
+            this.middleCenterPictureBox.Location = new System.Drawing.Point(202, 183);
             this.middleCenterPictureBox.Name = "middleCenterPictureBox";
-            this.middleCenterPictureBox.Size = new System.Drawing.Size(100, 50);
+            this.middleCenterPictureBox.Size = new System.Drawing.Size(161, 141);
             this.middleCenterPictureBox.TabIndex = 4;
             this.middleCenterPictureBox.TabStop = false;
             this.middleCenterPictureBox.Click += new System.EventHandler(this.Cell_Click);
@@ -101,9 +101,9 @@
             // middleRightPictureBox
             // 
             this.middleRightPictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.middleRightPictureBox.Location = new System.Drawing.Point(247, 90);
+            this.middleRightPictureBox.Location = new System.Drawing.Point(369, 181);
             this.middleRightPictureBox.Name = "middleRightPictureBox";
-            this.middleRightPictureBox.Size = new System.Drawing.Size(100, 50);
+            this.middleRightPictureBox.Size = new System.Drawing.Size(161, 143);
             this.middleRightPictureBox.TabIndex = 5;
             this.middleRightPictureBox.TabStop = false;
             this.middleRightPictureBox.Click += new System.EventHandler(this.Cell_Click);
@@ -111,9 +111,9 @@
             // bottomLeftPictureBox
             // 
             this.bottomLeftPictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.bottomLeftPictureBox.Location = new System.Drawing.Point(35, 146);
+            this.bottomLeftPictureBox.Location = new System.Drawing.Point(35, 330);
             this.bottomLeftPictureBox.Name = "bottomLeftPictureBox";
-            this.bottomLeftPictureBox.Size = new System.Drawing.Size(100, 50);
+            this.bottomLeftPictureBox.Size = new System.Drawing.Size(161, 143);
             this.bottomLeftPictureBox.TabIndex = 6;
             this.bottomLeftPictureBox.TabStop = false;
             this.bottomLeftPictureBox.Click += new System.EventHandler(this.Cell_Click);
@@ -121,9 +121,9 @@
             // bottomCenterPictureBox
             // 
             this.bottomCenterPictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.bottomCenterPictureBox.Location = new System.Drawing.Point(141, 146);
+            this.bottomCenterPictureBox.Location = new System.Drawing.Point(202, 330);
             this.bottomCenterPictureBox.Name = "bottomCenterPictureBox";
-            this.bottomCenterPictureBox.Size = new System.Drawing.Size(100, 50);
+            this.bottomCenterPictureBox.Size = new System.Drawing.Size(161, 143);
             this.bottomCenterPictureBox.TabIndex = 7;
             this.bottomCenterPictureBox.TabStop = false;
             this.bottomCenterPictureBox.Click += new System.EventHandler(this.Cell_Click);
@@ -131,9 +131,9 @@
             // bottomRightPictureBox
             // 
             this.bottomRightPictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.bottomRightPictureBox.Location = new System.Drawing.Point(247, 146);
+            this.bottomRightPictureBox.Location = new System.Drawing.Point(369, 330);
             this.bottomRightPictureBox.Name = "bottomRightPictureBox";
-            this.bottomRightPictureBox.Size = new System.Drawing.Size(100, 50);
+            this.bottomRightPictureBox.Size = new System.Drawing.Size(161, 143);
             this.bottomRightPictureBox.TabIndex = 8;
             this.bottomRightPictureBox.TabStop = false;
             this.bottomRightPictureBox.Click += new System.EventHandler(this.Cell_Click);
@@ -142,7 +142,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(394, 231);
+            this.ClientSize = new System.Drawing.Size(564, 510);
             this.Controls.Add(this.bottomRightPictureBox);
             this.Controls.Add(this.bottomCenterPictureBox);
             this.Controls.Add(this.bottomLeftPictureBox);
@@ -152,8 +152,11 @@
             this.Controls.Add(this.topRightPictureBox);
             this.Controls.Add(this.topCenterPictureBox);
             this.Controls.Add(this.topLeftPictureBox);
+            this.MaximumSize = new System.Drawing.Size(580, 549);
+            this.MinimumSize = new System.Drawing.Size(580, 549);
             this.Name = "TicTacToeForm";
-            this.Text = "Form1";
+            this.ShowInTaskbar = false;
+            this.Text = "Крестики - нолики";
             ((System.ComponentModel.ISupportInitialize)(this.topLeftPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.topCenterPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.topRightPictureBox)).EndInit();

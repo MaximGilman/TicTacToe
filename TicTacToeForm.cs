@@ -18,29 +18,56 @@ namespace tictactoe
 {
     public partial class TicTacToeForm : Form
     {
-        private CellPlaceSelector _cellPlaceSelector;
         private Cell[,] _cells;
         private TurnHandler _turnHandler;
         private PictureSelector _pictureSelector;
+        private WinnerChecker _winnerChecker;
+        private CellsGenerator _cellsGenerator;
         public TicTacToeForm()
         {
             InitializeComponent();
-
-            _cellPlaceSelector = new CellPlaceSelector(); // на удаление
-            
-            _cells = new CellsGenerator(this).GenerateCells();
-            _turnHandler = new TurnHandler();
+            _cellsGenerator = new CellsGenerator(this);
             _pictureSelector = new PictureSelector(AppDomain.CurrentDomain.BaseDirectory);
+            Init();
+
+            _winnerChecker.WinnerWasFound += WinnerWasFound;
+            _winnerChecker.NoMoreTurns += NoMoreTurns; ;
+
         }
+
+     
 
         private void Cell_Click(object sender, EventArgs e)
         {
             var typicalSender = sender as Control;
             Cell cell = _cells.GetCellByName(typicalSender?.Name);
             var turn = _turnHandler.NexTurn();
-            cell.PictureBox.Image = _pictureSelector.SelectImageByTurn(turn);
-            cell.PictureBox.Enabled = false;
+            var image = _pictureSelector.SelectImageByTurn(turn);
+            cell.WasClicked(turn, image);
+            _winnerChecker.CheckWinner(_cells, turn);
+        }
+        private void NoMoreTurns()
+        {
+            MessageBox.Show($@"Ходы закончились", "Игра окончена", MessageBoxButtons.OK);
+            Restart();
+        }
+        private void WinnerWasFound(Turn winnerTurn)
+        {
+            MessageBox.Show($@"Победитель найден! Это {winnerTurn}", "Игра окончена", MessageBoxButtons.OK);
+            Restart();
         }
 
+        private void Restart()
+        {
+            Init();
+            Application.Restart();
+        }
+
+        private void Init()
+        {
+            _cells = _cellsGenerator.GenerateCells();
+            _turnHandler = new TurnHandler();
+            _winnerChecker = new WinnerChecker();
+        }
     }
 }
