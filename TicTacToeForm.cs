@@ -27,7 +27,7 @@ namespace tictactoe
         {
             InitializeComponent();
             _cellsGenerator = new CellsGenerator(this);
-            _pictureSelector = new PictureSelector(AppDomain.CurrentDomain.BaseDirectory);
+            _pictureSelector = new PictureSelector();
             Init();
 
             _winnerChecker.WinnerWasFound += WinnerWasFound;

@@ -7,21 +7,22 @@ namespace tictactoe.Services
 {
     public class PictureSelector
     {
-        private readonly Image O;
-        private readonly Image X;
+        private readonly Image _o;
+        private readonly Image _x;
 
-        public PictureSelector(string basePath)
+        public PictureSelector()
         {
-            O = Image.FromFile($"{basePath}{RelativePath}{OFileNameConstant}{FileExtension}"); 
-            X = Image.FromFile($"{basePath}{RelativePath}{XFileNameConstant}{FileExtension}");
+            
+            _o = Properties.Resources.o; 
+            _x = Properties.Resources.x;
         }
 
         public Image SelectImageByTurn(Turn turn)
         {
             return turn switch
             {
-                Turn.X => X,
-                Turn.O => O,
+                Turn.X => _x,
+                Turn.O => _o,
                 _ => throw new ArgumentOutOfRangeException(nameof(turn), turn, null)
             };
         }
