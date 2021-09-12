@@ -41,10 +41,10 @@ namespace tictactoe.Services
                                  cells[0, 0].CellStatus == (cells[0, 1].CellStatus) && (cells[0, 1].CellStatus == cells[0, 2].CellStatus);
 
             bool isMidRowEqual = cells[1, 0].CellStatus != CellStatus.Empty &&
-                                 cells[1, 0].CellStatus == (cells[1, 1].CellStatus) && (cells[0, 1].CellStatus == cells[1, 2].CellStatus);
+                                 cells[1, 0].CellStatus == (cells[1, 1].CellStatus) && (cells[1, 1].CellStatus == cells[1, 2].CellStatus);
 
             bool isLowRowEqual = cells[2, 0].CellStatus != CellStatus.Empty &&
-                                 cells[2, 0].CellStatus == (cells[2, 1].CellStatus) && (cells[0, 1].CellStatus == cells[2, 2].CellStatus);
+                                 cells[2, 0].CellStatus == (cells[2, 1].CellStatus) && (cells[2, 1].CellStatus == cells[2, 2].CellStatus);
 
 
             return isLowRowEqual || isMidRowEqual || isTopRowEqual;
